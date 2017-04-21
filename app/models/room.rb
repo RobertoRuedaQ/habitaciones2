@@ -20,6 +20,5 @@ class Room < ActiveRecord::Base
   validates :beds, :numericality => { :only_integer => true }
   validates :guests, presence: true
   validates :guests, :numericality => { :only_integer => true }
-  validates :image_url, presence: true
   validates :price_per_night, presence: true
 end
